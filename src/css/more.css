@@ -1,0 +1,71 @@
+.shipment-container .shipment-list {
+  margin-top: 10px;
+  padding: 0 12px;
+  background: #fff;
+}
+
+.shipment-container .shipment-list .item {
+  display: block;
+  height: 45px;
+  padding-right: 20px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 45px;
+  border-bottom: 1px solid #ececec;
+  color: #666;
+  font-size: 12px;
+}
+
+.shipment-container .shipment-list .item:last-child {
+  border-bottom: none;
+}
+
+.shipment-container .shipment-list .item > .icon-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.shipment-container .shipment-list .item .kefu-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.shipment-container .shipment-list .item .text {
+  color: #999;
+}
+
+.shipment-container .shipment-detail {
+  padding: 0 12px;
+  background: #fff;
+}
+
+.shipment-container .shipment-detail .title {
+  padding: 12px 0;
+  padding-left: 22px;
+  position: relative;
+  border-bottom: 1px solid #ececec;
+  line-height: 18px;
+  font-size: 13px;
+  color: #000;
+}
+
+.shipment-container .shipment-detail .text {
+  padding: 12px 22px;
+  border-bottom: none;
+  font-size: 13px;
+  color: #666;
+  line-height: 20px;
+}
+
+.shipment-container .shipment-detail .icon-wenti {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  font-size: 22px;
+  color: #4f4697;
+}

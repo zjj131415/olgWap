@@ -1,0 +1,248 @@
+html {
+  background: #fff;
+}
+
+.m-head {
+  height: 45px;
+  padding: 0 45px;
+  position: relative;
+  background: #fff;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.m-head .head-title {
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 18px;
+  color: #000;
+}
+
+.m-head .lt-btn,
+.m-head .rt-btn {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  color: #272636;
+}
+
+.m-head .lt-btn {
+  left: 0;
+}
+
+.m-head .rt-btn {
+  right: 0;
+}
+
+.login-panel {
+  padding: 0 25px;
+  background: #fff;
+}
+
+.login-panel .form-text {
+  position: relative;
+  padding-top: 13px;
+  border-bottom: 1px solid #ececec;
+}
+
+.login-panel .form-text .iconfont {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  margin-top: -3px;
+  color: #666;
+}
+
+.login-panel .form-text .get-code {
+  position: absolute;
+  right: 1px;
+  top: 15px;
+  display: inline-block;
+  height: 25px;
+  padding: 0 25px;
+  background: #fff;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  border: 1px solid #ececec;
+  line-height: 25px;
+  font-size: 12px;
+  color: #666;
+}
+
+.login-panel .form-text .get-code:active, .login-panel .form-text .get-code:disabled {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.login-panel .txt {
+  width: 100%;
+  height: 45px;
+  padding: 12px 12px 12px 30px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  border: none;
+  line-height: 20px;
+  font-size: 13px;
+  color: #666;
+}
+
+.login-panel .txt:focus + .iconfont {
+  color: #4f4697;
+}
+
+.login-panel .btn {
+  width: 100%;
+  height: 40px;
+  margin-top: 25px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background: #4f4697;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-panel .btn:active, .login-panel .btn:disabled {
+  background: #3d3677;
+}
+
+.login-panel .other-operations {
+  height: 30px;
+  margin-top: 12px;
+  line-height: 30px;
+}
+
+.login-panel .other-operations .forget-password {
+  font-size: 13px;
+  color: #666;
+}
+
+.login-panel .other-operations .quick-register {
+  font-size: 13px;
+  color: #4f4697;
+}
+
+.login-panel .other-login .other-login-title {
+  height: 20px;
+  position: relative;
+}
+
+.login-panel .other-login .other-login-title:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.login-panel .other-login .text {
+  width: 100px;
+  height: 20px;
+  position: relative;
+  left: 50%;
+  margin-top: 40px;
+  margin-left: -50px;
+  background: #fff;
+  line-height: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #c2c2c2;
+}
+
+.login-panel .other-login .login-options {
+  width: 130px;
+  height: 50px;
+  margin: 15px auto 0 auto;
+}
+
+.login-panel .other-login .login-options .iconfont {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  color: #000;
+}
+
+.login-panel .other-login .login-options .icon-qq {
+  color: #58a6fe;
+}
+
+.login-panel .other-login .login-options .icon-weixin {
+  color: #0ebc19;
+}
+
+.login-panel .other-login .login-options .name {
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.checkedbox-box {
+  display: block;
+  height: 18px;
+  margin-left: 8px;
+  margin-top: 10px;
+  line-height: 18px;
+  font-size: 13px;
+  color: #666;
+}
+
+.checkedbox-box a {
+  text-decoration: underline;
+  font-size: 12px;
+  color: #666;
+}
+
+.checkboxFour {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.checkboxFour label {
+  cursor: pointer;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border: 1px solid #e42c46;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.checkboxFour label:after {
+  opacity: 1;
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 3px;
+  background: transparent;
+  top: 5px;
+  left: 4px;
+  border: 1px solid #fff;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.checkboxFour label:hover::after {
+  opacity: 1;
+}
+
+.checkboxFour input[type=checkbox] {
+  visibility: hidden;
+}
+
+.checkboxFour input[type=checkbox]:checked + label:after {
+  border-color: #e42c46;
+  opacity: 1;
+}

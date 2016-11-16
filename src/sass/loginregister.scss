@@ -1,0 +1,221 @@
+html{
+    background: #fff;
+}
+ // head 
+.m-head{
+    height: 45px;
+    padding: 0 45px;
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #dcdcdc;
+    .head-title{
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        font-size: 18px;
+        color: #000;
+    }
+    .lt-btn,
+    .rt-btn{
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 45px;
+        font-size: 20px;
+        color: #272636;
+    }
+    .lt-btn{
+        left: 0;
+    }
+    .rt-btn{
+        right: 0;
+    }
+}
+ // 登录面板 
+.login-panel{
+    padding: 0 25px;
+    background: #fff;
+    .form-text{
+        position: relative;
+        padding-top: 13px;
+        border-bottom: 1px solid #ececec;
+        .iconfont{
+            position: absolute;
+            left: 8px;
+            top: 50%;
+            margin-top: -3px;
+            color: #666;
+        }
+        .get-code{
+            position: absolute;
+            right: 1px;
+            top: 15px;
+            display: inline-block;
+            height: 25px;
+            padding: 0 25px;
+            background: #fff;
+            border-radius: 20px;
+            border: 1px solid #ececec;
+            line-height: 25px;
+            font-size: 12px;
+            color: #666;
+            &:active,
+            &:disabled{
+                background: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+    .txt{
+        width: 100%;
+        height: 45px;
+        padding: 12px 12px 12px 30px;
+        margin: 0;
+        box-sizing: border-box;
+        background: #fff;
+        border: none;
+        line-height: 20px;
+        font-size: 13px;
+        color: #666;
+        &:focus + .iconfont{
+            color: #4f4697;
+        }
+    }
+    .btn{
+        width: 100%;
+        height: 40px;
+        margin-top: 25px;
+        border-radius: 5px;
+        background: #4f4697;
+        color: #fff;
+        font-size: 16px;
+        &:active,
+        &:disabled{
+            background: #3d3677;
+        }
+    }
+    .other-operations{
+        height: 30px;
+        margin-top: 12px;
+        line-height: 30px;
+        .forget-password{
+            font-size: 13px;
+            color: #666;
+        }
+        .quick-register{
+            font-size: 13px;
+            color: #4f4697;
+        }
+    }
+    .other-login{
+        .other-login-title{
+            height: 20px;
+            position: relative;
+            &:before{
+                content: "";
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 10px;
+                border-bottom: 1px solid #dcdcdc;
+            }
+        }
+        .text{
+            width: 100px;
+            height: 20px;
+            position: relative;
+            left: 50%;
+            margin-top: 40px;
+            margin-left: -50px;
+            background: #fff;
+            line-height: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #c2c2c2;
+        }
+        .login-options{
+            width: 130px;
+            height: 50px;
+            margin:15px auto 0 auto;
+            .iconfont{
+                width: 25px;
+                height: 25px;
+                font-size: 25px;
+                color: #000;
+            }
+            .icon-qq{
+                color: #58a6fe;
+            }
+            .icon-weixin{
+                color: #0ebc19;
+            }
+            .name{
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+ // 复选框 
+.checkedbox-box{
+    display: block;
+    height: 18px;
+    margin-left: 8px;
+    margin-top: 10px;
+    line-height: 18px;
+    font-size: 13px;
+    color: #666;
+    a{
+        text-decoration: underline;
+        font-size: 12px;
+        color: #666;
+    }
+}
+.checkboxFour {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    position: relative;
+    label {
+        cursor: pointer;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        left: 0;
+        background:#fff;
+        border:1px solid #e42c46;
+        border-radius:50%;
+        &:after {
+            opacity: 1;
+            content: '';
+            position: absolute;
+            width: 7px;
+            height: 3px;
+            background: transparent;
+            top: 5px;
+            left: 4px;
+            border: 1px solid #fff;
+            border-top: none;
+            border-right: none;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        } 
+        &:hover::after {
+            opacity:1;
+        }   
+    }
+    input[type=checkbox] {
+        visibility: hidden;
+        &:checked + label:after {
+            border-color:#e42c46;
+            opacity: 1;
+        }
+    }
+}

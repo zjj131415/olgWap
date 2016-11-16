@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<meta name="format-detection" content="telephone=no, email=no"/>
+	<!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/user.css">
+	<link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+	<div style="height: 45px;background: red; height: 2000px;">
+		<div class="min-header" style="height: 45px;background: #000;"></div>
+	</div>
+<script>
+	var a = 1;
+	window.onscroll = function(){ 
+	    var t = document.documentElement.scrollTop || document.body.scrollTop;  
+	    if( t > 1 ) { 
+	    	document.querySelector('.min-header').style.position = 'fixed';
+	    } else { 
+	    	document.querySelector('.min-header').style.position = 'relative';
+	    } 
+	} 
+	
+</script>
+</body>
+</html>

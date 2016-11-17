@@ -753,50 +753,6 @@
 }
 
 // form-block
-// .infor-form{
-//     padding: 0 12px;
-//     background: #fff;
-//     .infor-item{
-//         width: 100%;
-//         height: 44px;
-//         overflow: hidden;
-//         position: relative;
-//         border-bottom: 1px solid #ececec;
-//         &:last-child{
-//             border-bottom: none;
-//         }
-//         .name{
-//             width: 70px;
-//             height: 44px;
-//             position: absolute;
-//             left: 0;
-//             top: 0;
-//             color: #666;
-//             line-height: 44px;
-//             font-size: 13px;
-//         }
-//         .tx{
-//             width: 100%;
-//             height: 100%;
-//             border: none;
-//             padding-left: 70px;
-//             font-size: 13px;
-//             color: #999;
-//         }
-        
-//     }
-//     .infor-btn{
-//         padding: 0 18px;
-//         .sub-btn{
-//             width: 100%;
-//             height: 40px;
-//             background: #4f4697;
-//             border-radius: 5px;
-//             font-size: 15px;
-//             color: #fff;
-//         }
-//     }
-// }
 .form-block{
     margin-top: 10px;
     .form-group{
@@ -829,6 +785,21 @@
                 font-size: 12px;
                 color: #999;
             }
+        }
+    }
+    .textarea{
+        padding: 0 12px;
+        background: #fff;
+        >textarea{
+            display: block;
+            margin: 0 ;
+            padding: 0;
+            width: 100%;
+            resize: none;
+            min-height: 150px;
+            // border: none;
+            line-height: 18px;
+            vertical-align: text-top;
         }
     }
     .form-btn{

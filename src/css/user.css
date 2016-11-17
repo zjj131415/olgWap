@@ -916,6 +916,22 @@
   color: #999;
 }
 
+.form-block .textarea {
+  padding: 0 12px;
+  background: #fff;
+}
+
+.form-block .textarea > textarea {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  resize: none;
+  min-height: 150px;
+  line-height: 18px;
+  vertical-align: text-top;
+}
+
 .form-block .form-btn {
   padding: 0 18px;
 }

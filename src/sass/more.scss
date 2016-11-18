@@ -63,3 +63,38 @@
         }
     }
 }
+//活动
+.act-container{
+    .act-list{
+        padding: 0 12px;
+    }
+    .act-item{
+        .act-time{
+            height: 40px;
+            overflow: hidden;
+            white-space: nowrap;
+            color: #999;
+            line-height: 40px;
+            text-align: center;
+            font-size: 12px;
+            text-overflow: ellipsis;
+        }
+    }
+    .act-infor{
+        padding: 0 15px;
+        background: #fff;
+        border: 1px solid #ececec;
+        .act-title{
+            height: 32px;
+            line-height:32px; 
+            color: #000;
+            font-size: 14px;
+        }
+        .act-doc{
+            padding: 8px 0;
+            font-size: 13px;
+            color: #666;
+            line-height: 16px;
+        }
+    }
+}

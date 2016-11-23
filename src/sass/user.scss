@@ -216,7 +216,8 @@
             opacity:1;
         }   
     }
-    input[type=checkbox] {
+    input[type=radio],
+    input[type=checkbox]{
         visibility: hidden;
         &:checked + label:after {
             border-color:#fff;
@@ -228,7 +229,6 @@
         }
     }
 }
-
  // 购物车结算栏 
 .u-operating{
     height: 50px;
@@ -296,7 +296,6 @@
         font-size: 16px;
     }
 }
-
  // 我的订单 / 足迹 /收藏
 .order-nav{
     padding: 0 12px;
@@ -475,7 +474,6 @@
         }
     }
 }
-
  // 我的红包 
 .gift-container{
     .gift-list{
@@ -588,7 +586,6 @@
         }
     }
 }
-
 // 收货地址
 .address-container{
     .address-item{
@@ -755,6 +752,19 @@
 // form-block
 .form-block{
     margin-top: 10px;
+    .checkbox-grounp{
+        display: flex;
+        padding: 10px 12px; 
+        background: #fff;
+        border-bottom: 1px solid #ececec;
+        .checkbox-item{
+            flex: 1;
+            height: 18px;
+            line-height: 18px;
+            font-size: 12px;
+            color: #666;
+        }
+    }
     .form-group{
         padding: 0 12px;
         background: #fff;
@@ -788,22 +798,22 @@
         }
     }
     .textarea{
-        padding: 0 12px;
+        padding: 12px;
         background: #fff;
         >textarea{
             display: block;
             margin: 0 ;
             padding: 0;
             width: 100%;
+            height: 150px;
             resize: none;
-            min-height: 150px;
-            // border: none;
-            line-height: 18px;
+            border: none;
             vertical-align: text-top;
         }
     }
     .form-btn{
-        padding: 0 18px;
+        margin-top: 18px;
+        padding: 0 30px;
         .sub-btn{
             width: 100%;
             height: 40px;

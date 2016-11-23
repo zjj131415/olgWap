@@ -1098,3 +1098,21 @@
   text-align: center;
   line-height: 50px;
 }
+
+.product-header {
+  height: 45px;
+}
+
+.product-header .p-header {
+  width: 100%;
+  height: 45px;
+  padding: 0 12px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+
+.product-header .p-header .icon-left {
+  font-size: 20px;
+}

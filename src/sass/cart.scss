@@ -1,6 +1,31 @@
  // 购物车 
 .cart-terms{
+    margin-top: 10px;
     background: #fff;
+    &:first-child{
+        margin-top: 0;
+    }
+    .title-container{
+        height: 44px;
+        line-height: 44px;
+        font-size: 13px;
+        color: #000;
+        background: #fff; 
+        border-bottom: 1px solid #ececec;
+        >.label{
+            margin-left: 12px;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #fff; 
+        }
+        >.violet{
+            background: #774acd;
+        }
+        >.blue{
+            background: #598bfe;
+        }
+    }
 }
 // 复选框 
 .cart-product-checkbox{
@@ -114,23 +139,58 @@
 
     }
     .cart-product-Price{
-        margin-top: 20px;
+        margin-top: 5px;
         .favorable-Price{
+            display: block;
             font-size: 12px;
+            line-height: 16px;
             color: #ff494b;
         }
         .original-price{
+            display: block;
+            line-height: 16px;
             font-size: 10px;
             color: #999999;
-            text-decoration: line-through;
         }
         .cart-product-number{
+            height: 24px;
+            margin-top: 5px;
+            margin-right: 3px;
+            border-radius: 3px;
+            border: 1px solid #ececec;
             font-size: 12px;
             color: #666;
-            >span{
-                margin: 0 5px;
+            .quantity{
+                display: inline-block;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                border: none;
+                box-sizing: border-box;
+                -webkit-appearance: none;
+                border: none;
+                text-align: center;
+                width: 30px;
+                vertical-align: top;
                 font-size: 15px;
-                color: #666666;
+                color: #232326;
+            }
+            .quantity-decrease,
+            .quantity-increase{
+                display: inline-block;
+                width: 25px;
+                height: 24px;
+                background-image: url(../images/symbol-icon.png);
+                background-repeat: no-repeat;
+                background-size: 37px 30px;
+             }
+            .quantity-decrease{
+                border-right: 1px solid #ececec;
+                background-position: 6px -13px;
+            }
+            .quantity-increase{
+                border-left: 1px solid #ececec;
+                background-position: 6px 6px;
             }
         }
     }
@@ -179,18 +239,17 @@
         }
         .similar-product{
             width: 100%;
-            height: 265px;
             background: #fff;
         }
         .similar-product-img{
-            height: 180px;
+            width: 100%;
             overflow: hidden;
             text-align: center;
         }
         .similar-product-name{
             height: 30px;
             padding: 0 10px;
-            margin-top: 10px;
+            margin-top: 5px;
             overflow: hidden;
             display: -webkit-box;
             -webkit-box-orient: vertical;

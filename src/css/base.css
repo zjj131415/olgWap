@@ -219,6 +219,10 @@ img {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-jiahao:before {
+  content: "\e63f";
+}
+
 .icon-left:before {
   content: "\e602";
 }
@@ -399,7 +403,7 @@ img {
   content: "\e618";
 }
 
-.icon-weixin1:before {
+.icon-weixin2:before {
   content: "\e604";
 }
 
@@ -429,6 +433,10 @@ img {
 
 .icon-search:before {
   content: "\e60f";
+}
+
+.icon-minus-circle:before {
+  content: "\e641";
 }
 
 .icon-tuihuanhuo:before {
@@ -557,6 +565,14 @@ img {
 
 .noborder {
   border: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .scwrapper {

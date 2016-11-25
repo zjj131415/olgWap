@@ -1,32 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-	<meta name="format-detection" content="telephone=no, email=no"/>
-	<!-- 忽略页面中的数字识别为电话，忽略email识别 -->
-	<title>Document</title>
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/user.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/user.css">
 </head>
 <body>
-	<!-- header -->
-	<div class="u-header">
-		<header class="header">
-			<div class="header-left">
-				<i class="iconfont icon-left"></i>
-			</div>
-			<div class="header-title">收货地址</div>
-		</header>
-	</div>
-	<div class="scwrapper">
-		<div class="address-container">
-			<div class="address-form">
-				<form action="">
-					<div class=""></div>
-				</form>
-			</div>
-		</div>
-	</div>
+    <!-- header -->
+    <div class="u-header">
+        <header class="header">
+            <div class="header-left">
+                <i class="iconfont icon-left"></i>
+            </div>
+            <div class="header-title">修改收货地址</div>
+        </header>
+    </div>
+    <div class="scwrapper">
+        <div class="form-block">
+            <form action="">
+                <div class="form-group">
+                    <div class="form-item">
+                        <div class="name">收货人:</div>
+                        <input class="tx" type="text" placeholder="请输入收货人姓名"">
+                    </div>
+                    <div class="form-item">
+                        <div class="name">所在地区:</div>
+                        <input class="tx" type="text" placeholder="请选择收货地址">
+                    </div>
+                    <div class="form-item">
+                        <div class="name">详细地址:</div>
+                        <input class="tx" type="text" placeholder="最少3个字，最多40个字">
+                    </div>
+                    <div class="form-item">
+                        <div class="name">手机号码:</div>
+                        <input class="tx" type="text" placeholder="请输入11位手机号码">
+                    </div>
+                    <div class="form-item">
+                        <div class="default-address">
+                        	设为默认地址
+                        </div>
+                        <div class="address-btn default-false">
+                        	<input class="addressDefault" type="hidden" value="true">
+                    	</div>
+                    </div>
+                </div>
+                <div class="form-btn mt10">
+                    <button class="sub-btn">确认</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="js/zepto.js"></script>
+    <script>
+    	(function(){
+    		$('.address-btn').on('tap',function(){
+    			if($(this).hasClass('default-true')){
+    				$(this).removeClass('default-true').addClass('default-false').find('.addressDefault').val(false);
+    				return false;
+    			}
+				$(this).removeClass('default-false').addClass('default-true').find('.addressDefault').val(true);
+    		})
+    	})();
+    </script>
 </body>
 </html>

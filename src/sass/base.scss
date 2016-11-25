@@ -57,6 +57,7 @@ img{max-width:100%;vertical-align: middle;}
 	-webkit-text-stroke-width: 0.2px;
 	-moz-osx-font-smoothing: grayscale;
 }
+.icon-jiahao:before { content: "\e63f"; }
 .icon-left:before { content: "\e602"; }
 .icon-mima:before { content: "\e605"; }
 .icon-scan:before { content: "\e600"; }
@@ -102,7 +103,7 @@ img{max-width:100%;vertical-align: middle;}
 .icon-shenfen:before { content: "\e6b3"; }
 .icon-fankui:before { content: "\e61e"; }
 .icon-daipingjia:before { content: "\e618"; }
-.icon-weixin1:before { content: "\e604"; }
+.icon-weixin2:before { content: "\e604"; }
 .icon-icon3-copy:before { content: "\e62f"; }
 .icon-faxian:before { content: "\e60e"; }
 .icon-wuliu:before { content: "\e635"; }
@@ -110,6 +111,7 @@ img{max-width:100%;vertical-align: middle;}
 .icon-shouhou:before { content: "\e623"; }
 .icon-yanzm:before { content: "\e60b"; }
 .icon-search:before { content: "\e60f"; }
+.icon-minus-circle:before { content: "\e641"; }
 .icon-tuihuanhuo:before { content: "\e619"; }
 .icon-service-import-bonded:before { content: "\e62c"; }
 .icon-wenti:before { content: "\e630"; }
@@ -145,6 +147,9 @@ img{max-width:100%;vertical-align: middle;}
 .nomt{margin: 0!important}
 
 .noborder{border: none !important}
+
+.text-center{text-align: center;}
+.text-right{text-align: right;}
 
 .scwrapper{
 	max-width: 640px;

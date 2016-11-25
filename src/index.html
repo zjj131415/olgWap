@@ -51,7 +51,7 @@
 				<i class="iconfont icon-search"></i>
 				在千万海外商品中搜索
 			</a>
-			<a class="left-box iconfont icon-xinxi" href="product-search.html">
+			<a class="left-box iconfont icon-xinxi" href="product-evaluate.html">
 				<div class="state"></div>
 			</a>
 		</div>
@@ -377,6 +377,10 @@
 <script>
 $("img.lazy").lazyload();
 (function(){
+	$('body').click(function(){
+		// dropload.noData();
+	})
+	var oo = 1;
 	$('.scwrapper').dropload({
 	    scrollArea : window,
 	    loadDownFn : function(me){
@@ -399,6 +403,12 @@ $("img.lazy").lazyload();
 						</a>\
 					</li>'
 	    	$(hehe).appendTo('.like-wrape ul');
+	    		oo++;
+	    	if(oo > 10){
+	            me.noData();
+		    	me.lock();
+	    		
+	    	}
 	    	me.resetload();
 	    }
 	});

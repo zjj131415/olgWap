@@ -155,6 +155,9 @@
             overflow: hidden;
             background: #fff;
             border-bottom: 1px solid #ececec;
+            &:last-child{
+                border-bottom: none;
+            }
         }
         .photo-name{
             height: 35px;
@@ -948,7 +951,7 @@
         }
     }
 }
-// 商品页面赛选导航
+// 商品页面筛选导航
 .screen-product-conteinrt{
     .screen-nav-container{
         height: 40px;
@@ -1099,5 +1102,47 @@
         }
     }
 }
+// 商品详情页面
+.product-evaluate-container{
+    // 有图评论 所有评论
+    .all-evaluate,
+    .img-evaluate{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+    .evaluate-nav-container{
+        height: 35px;
+    }
+    .evaluate-nav{
+        width: 100%;
+        height: 35px;
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 12px;
+        position: fixed;
+        left: 0;
+        top: 46px;
+        background: #fff;
+        border-bottom: 1px solid #ececec;
+    }
+    .evaluate-nav-item{
+        flex: 1;
+        text-align: center;
+        line-height: 32px;
+        &.active > span{
+            border-color: #504697;
+            color: #504697;
+        }
+        >span{
+            display: inline-block;
+            border-bottom: 2px solid #fff;
+            font-size: 13px;
+            color: #999;
+        }
+    }
+}
+
 
 

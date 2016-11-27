@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="www.olgolg.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="description" content="欧乐购海外直邮">
+	<meta name="Keywords" content="网上购物">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/special.css">
+</head>
+<body>
+	 <!-- header -->
+    <div class="u-header">
+        <header class="header">
+            <div class="header-left">
+                <i class="iconfont icon-left"></i>
+            </div>
+            <div class="header-title">
+            	<div class="direct-mail">
+            		<!-- <i class="iconfont icon-haiwaizhiyou"></i> -->
+            		<span>海外直邮</span>
+            	</div>
+            </div>
+        </header>
+    </div>
+    <!-- content -->
+    <div class="scwrapper">
+    	<div class="special-banner">
+    		<a href="javascript:;">
+    			<img src="images/direct-mail-banner.jpg" alt="">
+    		</a>
+    	</div>
+    	<div class="direct-mail-container">
+    		<ul class="direct-mail-list">
+    			<li class="direct-mail-li">
+    				<a class="direct-mail-detail" href="javascript:;">
+    					<div class="img">
+    						<img src="images/goods1.jpg" alt="">
+    					</div>
+    					<div class="infor">
+    						<div class="production-address">
+    							<img src="images/helan-z.png" alt="">
+    							荷兰品牌
+    						</div>
+    						<p class="title">Nutrilon新版铁罐婴幼儿奶粉 5段800克2-3岁</p>
+    						<p class="sub-detail">荷兰奶源，天堂纯净牧场</p>
+    						<div class="price-purchase">
+    							<div class="price">
+    								<p class="now-price">￥369 </p>
+    								<p class="original-price">￥529 </p>
+    							</div>
+    							<div class="purchase">去抢购</div>
+    						</div>
+    					</div>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+    <script src="js/zepto.min.js"></script>
+    <script>
+    	$(function(){
+    		var oo = 0;
+			$('.direct-mail-container').dropload({
+			    scrollArea : window,
+			    loadDownFn : function(me){
+			    	var hehe = '';
+			    	for(var i=0; i < 10; i++){
+			    		hehe+= '\
+			    			<li class="direct-mail-li">\
+			    				<a class="direct-mail-detail" href="javascript:;">\
+			    					<div class="img">\
+			    						<img src="images/goods1.jpg" alt="">\
+			    					</div>\
+			    					<div class="infor">\
+			    						<div class="production-address">\
+			    							<img src="images/helan-z.png" alt="">\
+			    							荷兰品牌\
+			    						</div>\
+			    						<p class="title">Nutrilon新版铁罐婴幼儿奶粉 5段800克2-3岁</p>\
+			    						<p class="sub-detail">荷兰奶源，天堂纯净牧场</p>\
+			    						<div class="price-purchase">\
+			    							<div class="price">\
+			    								<p class="now-price">￥369 </p>\
+			    								<p class="original-price">￥529 </p>\
+			    							</div>\
+			    							<div class="purchase">去抢购</div>\
+			    						</div>\
+			    					</div>\
+			    				</a>\
+			    			</li>\
+			    		'
+			    	}
+			    	$(hehe).appendTo('.direct-mail-list');
+			    		oo++;
+			    	if(oo > 10){
+			            me.noData();
+				    	me.lock();
+			    		
+			    	}
+			    	me.resetload();
+			    }
+			});
+    	})
+    </script>
+</body>
+</html>

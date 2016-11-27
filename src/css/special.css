@@ -1,0 +1,532 @@
+.u-header .direct-mail,
+.u-header .seckill,
+.u-header .selling {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 52px;
+}
+
+.u-header .direct-mail {
+  color: #4d4398;
+}
+
+.u-header .seckill {
+  color: #dd2727;
+}
+
+.u-header .selling {
+  color: #e60012;
+}
+
+.seckill-timer-container {
+  position: relative;
+}
+
+.seckill-timer-container .seckill-timer {
+  width: 100%;
+  height: 28px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -14px;
+  text-align: center;
+  color: #fff;
+}
+
+.seckill-timer-container .seckill-timer .title {
+  font-size: 10px;
+}
+
+.seckill-timer-container .seckill-timer .timer {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.seckill-container .seckill-nav-fixed {
+  height: 45px;
+}
+
+.seckill-container .seckill-nav-box {
+  width: 100%;
+  height: 45px;
+  position: static;
+  left: 0;
+  top: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #dd2727;
+  padding: 5px 5px 0 5px;
+}
+
+.seckill-container .seckill-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+}
+
+.seckill-container .nav-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.seckill-container .nav-item > p {
+  font-size: 13px;
+  color: #fff;
+  line-height: 16px;
+}
+
+.seckill-container .nav-item.active {
+  -webkit-border-radius: 3px 3px 0 0;
+          border-radius: 3px 3px 0 0;
+  background: #7b00ef;
+}
+
+.seckill-container .nav-item.current > p {
+  color: #fddf01;
+}
+
+.seckill-container .seckill-list {
+  padding: 5px 5px 0 5px;
+  background: #7b00ef;
+}
+
+.seckill-container .seckill-list .seckill-li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ececec;
+  background: #fff;
+}
+
+.seckill-container .seckill-list .seckill-li:last-child {
+  border-bottom: 0;
+}
+
+.seckill-container .seckill-list .seckill-li > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 120px;
+}
+
+.seckill-container .skill-pic {
+  width: 120px;
+  height: 120px;
+}
+
+.seckill-container .skill-infor {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 120px;
+  margin-left: 10px;
+}
+
+.seckill-container .skill-infor .skill-title {
+  height: 32px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #666;
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.seckill-container .skill-infor .skill-discount {
+  display: block;
+  width: 36px;
+  height: 15px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  line-height: 15px;
+  background: #ff7901;
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+}
+
+.seckill-container .skill-price-purchase {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+}
+
+.seckill-container .skill-price-purchase .skill-price {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 15px;
+}
+
+.seckill-container .skill-price-purchase .skill-now-price {
+  font-size: 18px;
+  color: #ff494b;
+}
+
+.seckill-container .skill-price-purchase .skill-original-price {
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.seckill-container .skill-purchase,
+.seckill-container .later-purchase,
+.seckill-container .finished-purchase {
+  width: 75px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 20px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.seckill-container .skill-purchase {
+  background: #dd2727;
+}
+
+.seckill-container .later-purchase {
+  background: #26a96d;
+}
+
+.seckill-container .finished-purchase {
+  background: #000;
+}
+
+.direct-mail-container .direct-mail-list {
+  padding: 0 10px;
+}
+
+.direct-mail-container .direct-mail-li {
+  margin-top: 10px;
+}
+
+.direct-mail-container .direct-mail-detail {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 110px;
+  padding: 10px 0;
+  background: #fff;
+}
+
+.direct-mail-container .direct-mail-detail .img {
+  width: 110px;
+}
+
+.direct-mail-container .direct-mail-detail .infor {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  margin-left: 10px;
+}
+
+.direct-mail-container .direct-mail-detail .production-address {
+  height: 18px;
+  overflow: hidden;
+  line-height: 18px;
+  font-size: 11px;
+  color: #666;
+}
+
+.direct-mail-container .direct-mail-detail .production-address > img {
+  height: 18px;
+}
+
+.direct-mail-container .direct-mail-detail .title {
+  height: 32px;
+  overflow: hidden;
+  margin-top: 3px;
+  padding-right: 5px;
+  font-size: 13px;
+  color: #252525;
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.direct-mail-container .direct-mail-detail .sub-detail {
+  height: 20px;
+  overflow: hidden;
+  font-size: 10px;
+  color: #666;
+  line-height: 20px;
+}
+
+.direct-mail-container .direct-mail-detail .price-purchase {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.direct-mail-container .direct-mail-detail .price {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  padding-top: 8px;
+}
+
+.direct-mail-container .direct-mail-detail .now-price {
+  line-height: 15px;
+  font-size: 15px;
+  color: #f33e3e;
+}
+
+.direct-mail-container .direct-mail-detail .original-price {
+  line-height: 15px;
+  font-size: 11px;
+  color: #666;
+  text-decoration: line-through;
+}
+
+.direct-mail-container .direct-mail-detail .purchase {
+  width: 80px;
+  height: 24px;
+  margin-top: 10px;
+  margin-right: 10px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  background: #dd2727;
+  font-size: 12px;
+  color: #fff;
+  line-height: 24px;
+  text-align: center;
+}
+
+.newest-container .newest-nav-container {
+  height: 60px;
+  background: #fff;
+}
+
+.newest-container .newest-nav-fix {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  overflow-x: auto;
+  position: relative;
+  background: #fff;
+  z-index: 100;
+}
+
+.newest-container .newest-nav-touch {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.newest-container .newest-nav-touch .newest-nav-li {
+  width: 70px;
+  padding-top: 10px;
+  border-bottom: 2px solid #fff;
+  text-align: center;
+}
+
+.newest-container .newest-nav-touch .newest-nav-li.active {
+  border-color: #4d4398;
+}
+
+.newest-container .newest-nav-touch .newest-nav-li.active > p {
+  color: #4d4398;
+}
+
+.newest-container .newest-nav-touch .newest-nav-li > .iconfont {
+  color: #999;
+  font-size: 22px;
+}
+
+.newest-container .newest-nav-touch .newest-nav-li > p {
+  line-height: 22px;
+  font-size: 13px;
+  color: #666;
+}
+
+.newest-container .newest-content .newest-sign {
+  height: 35px;
+  background: #f2f2f2;
+  background-image: url(../images/special-newest-sign.png);
+  background-size: 130px 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 17px;
+  color: #4d4398;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+}
+
+.newest-container .newest-content .newest-list {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.newest-container .newest-content .newest-list .production-address {
+  margin-top: 5px;
+  color: #4f4697;
+}
+
+.newest-container .newest-content .newest-list .direct-mail-li {
+  margin-top: 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.newest-container .newest-content .newest-list .direct-mail-li:last-child {
+  border-bottom: 0;
+}
+
+.newest-container .newest-content .newest-list .title {
+  color: #666;
+}
+
+.newest-container .newest-content .newest-list .purchase {
+  width: 75px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.selling-container {
+  padding: 0 5px;
+  background: #fe2e57;
+}
+
+.selling-container .title-box {
+  padding-top: 2px;
+  padding-bottom: 6px;
+}
+
+.selling-container .title-box .min-title {
+  height: 25px;
+  line-height: 28px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  background-image: url(../images/selling-title.png?333);
+  background-repeat: no-repeat;
+  background-size: 240px 25px;
+  background-position: center;
+}
+
+.selling-container .title-box .sub-title {
+  height: 14px;
+  line-height: 14px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+
+.selling-container .selling-li {
+  width: 50%;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.selling-container .selling-li:nth-child(even) {
+  padding-left: 5px;
+}
+
+.selling-container .selling-li:nth-child(odd) {
+  padding-right: 5px;
+}
+
+.selling-container .selling-li > a {
+  display: block;
+}
+
+.selling-container .selling-detail {
+  background: #fff;
+}
+
+.selling-container .selling-detail .selling-photo {
+  padding: 10px 15px;
+}
+
+.selling-container .selling-infor .selling-introduce {
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: #7f7f7f;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+.selling-container .selling-infor .price-purchase {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 47px;
+  padding-top: 5px;
+}
+
+.selling-container .selling-infor .price {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5px 0;
+  padding-left: 6px;
+}
+
+.selling-container .selling-infor .original-price {
+  margin-top: 3px;
+  line-height: 15px;
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.selling-container .selling-infor .now-price {
+  line-height: 18px;
+  font-size: 14px;
+  color: #ff494b;
+}
+
+.selling-container .selling-infor .purchase {
+  width: 75px;
+  height: 30px;
+  margin-right: 8px;
+  margin-top: 7px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background: #dd2727;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}

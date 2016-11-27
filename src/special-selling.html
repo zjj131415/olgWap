@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="www.olgolg.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta name="description" content="欧乐购海外直邮">
+    <meta name="Keywords" content="网上购物">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/special.css">
+</head>
+<body>
+     <!-- header -->
+    <div class="u-header">
+        <header class="header">
+            <div class="header-left">
+                <i class="iconfont icon-left"></i>
+            </div>
+            <div class="header-title">
+                <div class="selling">
+                    <!-- <i class="iconfont icon-haiwaizhiyou"></i> -->
+                    热销排行
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- content -->
+    <div class="scwrapper">
+        <div class="special-banner">
+            <a href="javascript:;">
+                <img src="images/selling-banner.jpg" alt="">
+            </a>
+        </div>
+        <div class="selling-container">
+            <div class=""></div>
+            <div class="selling-content">
+                <div class="title-box">
+                    <div class="min-title">
+                        母婴排行
+                    </div>
+                    <p class="sub-title">海外直采尖货，买手精选TOP！必抢</p>
+                </div>
+                <div class="selling-list clearfix">
+                    <div class="selling-li">
+                        <a href="javascript:;">
+                            <div class="selling-detail">
+                                <div class="selling-photo">
+                                    <img src="images/goods1.jpg" alt="">
+                                </div>
+                                <div class="selling-infor">
+                                    <p class="selling-introduce">荷兰雀巢婴幼儿奶粉 800克</p>
+                                    <div class="price-purchase">
+                                        <div class="price">
+                                            <p class="original-price">￥258</p>
+                                            <p class="now-price">￥199</p>
+                                        </div>
+                                        <div class="purchase">立即购买</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="selling-li">
+                        <a href="javascript:;">
+                            <div class="selling-detail">
+                                <div class="selling-photo">
+                                    <img src="images/goods1.jpg" alt="">
+                                </div>
+                                <div class="selling-infor">
+                                    <p class="selling-introduce">荷兰雀巢婴幼儿奶粉 800克</p>
+                                    <div class="price-purchase">
+                                        <div class="price">
+                                            <p class="original-price">￥258</p>
+                                            <p class="now-price">￥199</p>
+                                        </div>
+                                        <div class="purchase">立即购买</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="selling-li">
+                        <a href="javascript:;">
+                            <div class="selling-detail">
+                                <div class="selling-photo">
+                                    <img src="images/goods1.jpg" alt="">
+                                </div>
+                                <div class="selling-infor">
+                                    <p class="selling-introduce">荷兰雀巢婴幼儿奶粉 800克</p>
+                                    <div class="price-purchase">
+                                        <div class="price">
+                                            <p class="original-price">￥258</p>
+                                            <p class="now-price">￥199</p>
+                                        </div>
+                                        <div class="purchase">立即购买</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="selling-li">
+                        <a href="javascript:;">
+                            <div class="selling-detail">
+                                <div class="selling-photo">
+                                    <img src="images/goods1.jpg" alt="">
+                                </div>
+                                <div class="selling-infor">
+                                    <p class="selling-introduce">荷兰雀巢婴幼儿奶粉 800克</p>
+                                    <div class="price-purchase">
+                                        <div class="price">
+                                            <p class="original-price">￥258</p>
+                                            <p class="now-price">￥199</p>
+                                        </div>
+                                        <div class="purchase">立即购买</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/zepto.js"></script>
+    <!-- <script>
+        $(function(){
+            window.scrollTo(0, 0);
+            var secKill = new SecKill();
+            secKill.initFn(); 
+       })
+        // SecKill
+        var SecKill = function(){
+            this.uHead_height = document.querySelector('.u-header')
+            this.fixNav = document.querySelector('.seckill-nav-fixed');
+            this.oNav = document.querySelector('.seckill-nav-box');
+            this.seckillNav = document.querySelector('.seckill-nav');
+        }
+        SecKill.prototype = {
+            initFn: function(){//初始化函数
+                this.fixpos();
+                this. switchTab();
+            },
+            fixpos: function(){//场次置顶
+                _this = this;
+                window.addEventListener('scroll', function(e){
+                    var Onav_top_height = _this.fixNav.offsetTop;
+                    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (scrollTop >= Onav_top_height){
+                        _this.oNav.style.position = 'fixed';
+                        // _this.uHead_height.style.display = 'none';
+                    }else {
+                        _this.oNav.style.position = 'static';
+                        // _this.uHead_height.style.display = 'block';
+                    }
+                }, false)
+            },
+            switchTab: function(){//场次切换
+                var aLi = this.seckillNav.children;
+                var _this = this;
+                for (var i=0;i<aLi.length;i++){
+                    (function(aLiId){
+                        aLi[aLiId].addEventListener('tap', function(){
+                            for (var i=0;i<aLi.length;i++){
+                                aLi[i].classList.remove('active');
+                            }
+                            this.classList.add('active');
+                        }, false)
+                    })(i)
+                }
+            }
+        }
+    </script> -->
+</body>
+</html>

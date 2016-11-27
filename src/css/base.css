@@ -207,7 +207,6 @@ img {
   src: url("../iconfont/iconfont.eot?t=1476408252");
   /* IE9*/
   src: url("../iconfont/iconfont.eot?t=1476408252#iefix") format("embedded-opentype"), url("../iconfont/iconfont.woff?t=1476408252") format("woff"), url("../iconfont/iconfont.ttf?t=1476408252") format("truetype"), url("../iconfont/iconfont.svg?t=1476408252#iconfont") format("svg");
-  /* iOS 4.1- */
 }
 
 .iconfont {
@@ -267,6 +266,10 @@ img {
   content: "\e616";
 }
 
+.icon-life_goods:before {
+  content: "\e642";
+}
+
 .icon-list:before {
   content: "\e607";
 }
@@ -281,6 +284,10 @@ img {
 
 .icon-zhifu:before {
   content: "\e62d";
+}
+
+.icon-clothing_goods:before {
+  content: "\e643";
 }
 
 .icon-share:before {
@@ -355,6 +362,10 @@ img {
   content: "\e603";
 }
 
+.icon-drink_goods:before {
+  content: "\e645";
+}
+
 .icon-hongbao:before {
   content: "\e61c";
 }
@@ -419,6 +430,18 @@ img {
   content: "\e635";
 }
 
+.icon-health_goods:before {
+  content: "\e646";
+}
+
+.icon-food_goods:before {
+  content: "\e647";
+}
+
+.icon-face_goods:before {
+  content: "\e648";
+}
+
 .icon-xiexianicon:before {
   content: "\e601";
 }
@@ -469,6 +492,10 @@ img {
 
 .icon-shangxia:before {
   content: "\e638";
+}
+
+.icon-baby_goods:before {
+  content: "\e649";
 }
 
 .icon-zhifubaozhifu:before {

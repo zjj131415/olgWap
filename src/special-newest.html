@@ -171,18 +171,18 @@
             window.scrollTo(0, 0);
             var secKill = new SecKill();
             secKill.initFn(); 
-       })
+        })
         // SecKill
         var SecKill = function(){
             this.uHead_height = document.querySelector('.u-header')
             this.fixNav = document.querySelector('.newest-nav-container');
             this.oNav = document.querySelector('.newest-nav-fix');
-            this.seckillNav = document.querySelector('.seckill-nav');
+            this.seckillNav = document.querySelector('.newest-nav-touch');
         }
         SecKill.prototype = {
             initFn: function(){//初始化函数
                 this.fixpos();
-                // this. switchTab();
+                this. switchTab();
             },
             fixpos: function(){//场次置顶
                 _this = this;
@@ -200,20 +200,20 @@
                     }
                 }, false)
             },
-            // switchTab: function(){//场次切换
-            //     var aLi = this.seckillNav.children;
-            //     var _this = this;
-            //     for (var i=0;i<aLi.length;i++){
-            //         (function(aLiId){
-            //             aLi[aLiId].addEventListener('tap', function(){
-            //                 for (var i=0;i<aLi.length;i++){
-            //                     aLi[i].classList.remove('active');
-            //                 }
-            //                 this.classList.add('active');
-            //             }, false)
-            //         })(i)
-            //     }
-            // }
+            switchTab: function(){//场次切换
+                var aLi = this.seckillNav.children;
+                var _this = this;
+                for (var i=0;i<aLi.length;i++){
+                    (function(aLiId){
+                        aLi[aLiId].addEventListener('tap', function(){
+                            for (var i=0;i<aLi.length;i++){
+                                aLi[i].classList.remove('active');
+                            }
+                            this.classList.add('active');
+                        }, false)
+                    })(i)
+                }
+            }
         }
     </script>
 </body>

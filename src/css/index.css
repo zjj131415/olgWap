@@ -242,6 +242,10 @@
   background: #fff;
 }
 
+.m-recommend .like-terms:last-child .like-box {
+  border-bottom: 0;
+}
+
 .m-recommend .like-box {
   display: -webkit-box;
   display: -webkit-flex;

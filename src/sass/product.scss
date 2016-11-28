@@ -1,3 +1,54 @@
+// 复选框 
+.checkboxFour {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    position: relative;
+    label {
+        cursor: pointer;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        left: 0;
+        background:#fff;
+        border:1px solid #e1e1e1;
+        border-radius:50%;
+        &:after {
+            opacity: 1;
+            content: '';
+            position: absolute;
+            width: 7px;
+            height: 3px;
+            background: transparent;
+            top: 5px;
+            left: 4px;
+            border: 2px solid #fff;
+            border-top: none;
+            border-right: none;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        } 
+        &:hover::after {
+            opacity:1;
+        }   
+    }
+    input[type=radio],
+    input[type=checkbox]{
+        visibility: hidden;
+        &:checked + label:after {
+            border-color:#fff;
+            opacity: 1;
+        }
+        &:checked + label{
+            background: #4f4697;
+            border-color: #4f4697;
+        }
+    }
+}
 // product-slider
 .product-slider{
     overflow: hidden;
@@ -892,6 +943,21 @@
                 color: #999;
             }
         }
+        .express-item{
+            padding: 10px 0;
+            border-top: 1px solid #ececec;
+            >label{
+                display: flex;
+                padding: 0 5px;
+            }
+            .express-name{
+                flex: 1;
+                height: 18px;
+                line-height: 18px;
+                color: #999;
+                font-size: 12px;
+            }
+        }
     }
     .confirm-order-operation{
         height: 50px;
@@ -932,6 +998,62 @@
             color: #fff;
             text-align: center;
             line-height: 50px;
+        }
+    }
+    .payment-method{
+        padding: 0 12px;
+        margin-top: 10px;
+        background: #fff;
+        .payment-title{
+            height: 35px;
+            line-height: 35px;
+            color: #666;
+            font-size: 14px;
+            border-bottom: 1px solid #ececec;
+        }
+        .method-item{
+            & > label{
+                display: flex;
+                 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            }
+            padding: 12px 5px 8px 5px;
+            border-bottom: 1px solid #ececec;
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+        .checkboxFour{
+            margin-top: 7px;
+        }
+        .text-wrape{
+            flex: 1;
+            height: 35px;
+            margin-left: 10px;
+            .main-text{
+                height: 17px;
+                line-height: 17px;
+                font-size: 14px;
+                color: #000;
+            }
+            .sub-text{
+                height: 18px;
+                line-height: 15px;
+                font-size: 13px;
+                color: #999;
+            }
+        }
+        .iconfont{
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            font-size: 35px;
+        }
+        .icon-zhifubaozhifu{
+            color: #00aaee;
+        }
+        .icon-weixinzhifu{
+            color: #00cd0c;
         }
     }
 }

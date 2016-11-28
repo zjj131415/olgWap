@@ -1,3 +1,61 @@
+.checkboxFour {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.checkboxFour label {
+  cursor: pointer;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.checkboxFour label:after {
+  opacity: 1;
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 3px;
+  background: transparent;
+  top: 5px;
+  left: 4px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.checkboxFour label:hover::after {
+  opacity: 1;
+}
+
+.checkboxFour input[type=radio],
+.checkboxFour input[type=checkbox] {
+  visibility: hidden;
+}
+
+.checkboxFour input[type=radio]:checked + label:after,
+.checkboxFour input[type=checkbox]:checked + label:after {
+  border-color: #fff;
+  opacity: 1;
+}
+
+.checkboxFour input[type=radio]:checked + label,
+.checkboxFour input[type=checkbox]:checked + label {
+  background: #4f4697;
+  border-color: #4f4697;
+}
+
 .product-slider {
   overflow: hidden;
   background: #fff;
@@ -1047,6 +1105,30 @@
   color: #999;
 }
 
+.confirm-order-container .goods-item .express-item {
+  padding: 10px 0;
+  border-top: 1px solid #ececec;
+}
+
+.confirm-order-container .goods-item .express-item > label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 5px;
+}
+
+.confirm-order-container .goods-item .express-item .express-name {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 18px;
+  line-height: 18px;
+  color: #999;
+  font-size: 12px;
+}
+
 .confirm-order-container .confirm-order-operation {
   height: 50px;
 }
@@ -1101,6 +1183,80 @@
   color: #fff;
   text-align: center;
   line-height: 50px;
+}
+
+.confirm-order-container .payment-method {
+  padding: 0 12px;
+  margin-top: 10px;
+  background: #fff;
+}
+
+.confirm-order-container .payment-method .payment-title {
+  height: 35px;
+  line-height: 35px;
+  color: #666;
+  font-size: 14px;
+  border-bottom: 1px solid #ececec;
+}
+
+.confirm-order-container .payment-method .method-item {
+  padding: 12px 5px 8px 5px;
+  border-bottom: 1px solid #ececec;
+}
+
+.confirm-order-container .payment-method .method-item > label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.confirm-order-container .payment-method .method-item:last-child {
+  border-bottom: 0;
+}
+
+.confirm-order-container .payment-method .checkboxFour {
+  margin-top: 7px;
+}
+
+.confirm-order-container .payment-method .text-wrape {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 35px;
+  margin-left: 10px;
+}
+
+.confirm-order-container .payment-method .text-wrape .main-text {
+  height: 17px;
+  line-height: 17px;
+  font-size: 14px;
+  color: #000;
+}
+
+.confirm-order-container .payment-method .text-wrape .sub-text {
+  height: 18px;
+  line-height: 15px;
+  font-size: 13px;
+  color: #999;
+}
+
+.confirm-order-container .payment-method .iconfont {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.confirm-order-container .payment-method .icon-zhifubaozhifu {
+  color: #00aaee;
+}
+
+.confirm-order-container .payment-method .icon-weixinzhifu {
+  color: #00cd0c;
 }
 
 .product-header {

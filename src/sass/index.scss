@@ -206,6 +206,9 @@
     .like-terms{
         padding: 0 10px;
         background: #fff;
+        &:last-child .like-box{
+            border-bottom: 0;
+        }
     }
     .like-box{
         display: -webkit-box;

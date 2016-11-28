@@ -306,15 +306,11 @@ img {
   content: "\e624";
 }
 
-.icon-weixin:before {
-  content: "\e63e";
-}
-
 .icon-dingwei:before {
   content: "\e63a";
 }
 
-.icon-weixin1:before {
+.icon-weixin:before {
   content: "\e680";
 }
 
@@ -378,6 +374,10 @@ img {
   content: "\e60d";
 }
 
+.icon-weixinzhifu:before {
+  content: "\e65f";
+}
+
 .icon-pingjia:before {
   content: "\e61f";
 }
@@ -414,7 +414,7 @@ img {
   content: "\e618";
 }
 
-.icon-weixin2:before {
+.icon-weixin1:before {
   content: "\e604";
 }
 

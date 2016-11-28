@@ -204,7 +204,7 @@
 }
 
 .seckill-container .finished-purchase {
-  background: #000;
+  background: #ccc;
 }
 
 .direct-mail-container .direct-mail-list {
@@ -331,6 +331,7 @@
   position: relative;
   background: #fff;
   z-index: 100;
+  border-bottom: 1px solid #ececec;
 }
 
 .newest-container .newest-nav-touch {
@@ -346,7 +347,7 @@
 
 .newest-container .newest-nav-touch .newest-nav-li {
   width: 70px;
-  padding-top: 10px;
+  padding-top: 9px;
   border-bottom: 2px solid #fff;
   text-align: center;
 }
@@ -365,7 +366,7 @@
 }
 
 .newest-container .newest-nav-touch .newest-nav-li > p {
-  line-height: 22px;
+  line-height: 14px;
   font-size: 13px;
   color: #666;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="author" content="www.olgolg.com">
@@ -346,87 +346,113 @@
 			</a>
 		</nav>
 	</footer>
-</body>
+	<div class="ui-loading-block show">
+        <div class="ui-loading-cnt">
+          <i class="ui-loading-bright"></i>
+          <p><%=content%></p>
+       </div>
+     </div>
 <script src="js/zepto.min.js"></script>
-<script src="js/lazyload.min.js"></script>
+<script src="js/component.js"></script>
 <script src="js/swiper.min.js"></script>
-<script>
-$("img.lazy").lazyload();
-(function(){
-	$('body').click(function(){
-		// dropload.noData();
-	})
-	var oo = 1;
-	$('.scwrapper').dropload({
-	    scrollArea : window,
-	    loadDownFn : function(me){
-	    	var hehe  ='<li class="like-terms">\
-						<a href="javascript:;">\
-							<div class="like-box">\
-								<div class="like-img">\
-									<img class="lazy" src="images/goods1.jpg" data-original="https://gw.alicdn.com/tps/TB1W_X6OXXXXXcZXVXXXXXXXXXX-400-400.png" alt="">\
-								</div>\
-								<div class="like-info">\
-									<div class="title">牛栏4段婴儿原装保税区荷兰进口奶粉四段诺\ 优能4海外直邮Nutrilon就减肥减肥减肥减肥鬼地方个地方郭德纲的风格的风格大方</div>\
-									<div class="address"><img src="images/helan.png" width="18px" height="18px" alt="">荷兰品牌</div>\
-									<div class="price">\
-										<span class="original-price">¥222.00</span>\
-										<span class="favorable-price">¥119.00</span>\
+<script type="text/javascript">
+	(function(){
+
+		// $('.scwrapper').click(function(){
+		// 	var hehe = $.loading({
+		// 		content: '你是SB么'
+		// 	});
+		// 	setTimeout(function(){
+		// 		hehe.loading('hide');
+		// 	}, 1000);
+		// 	$(hehe).on('loading:hide', function(){
+		// 		alert('')
+		// 	})
+		// })
+
+		var el;
+		
+		    el=$.tips({
+		        content:'密码格式需由6~18位字母与数字组成!',
+		        stayTime:1000
+		    })
+		    el.on("tips:hide",function(){
+		        console.log("tips hide");
+		    })
+
+
+
+
+		var oo = 1;
+		$('.scwrapper').dropload({
+		    scrollArea : window,
+		    loadDownFn : function(me){
+		    	var hehe  ='<li class="like-terms">\
+							<a href="javascript:;">\
+								<div class="like-box">\
+									<div class="like-img">\
+										<img class="lazy" src="images/goods1.jpg" data-original="https://gw.alicdn.com/tps/TB1W_X6OXXXXXcZXVXXXXXXXXXX-400-400.png" alt="">\
 									</div>\
-									<div class="purchase">抢购</div>\
+									<div class="like-info">\
+										<div class="title">牛栏4段婴儿原装保税区荷兰进口奶粉四段诺\ 优能4海外直邮Nutrilon就减肥减肥减肥减肥鬼地方个地方郭德纲的风格的风格大方</div>\
+										<div class="address"><img src="images/helan.png" width="18px" height="18px" alt="">荷兰品牌</div>\
+										<div class="price">\
+											<span class="original-price">¥222.00</span>\
+											<span class="favorable-price">¥119.00</span>\
+										</div>\
+										<div class="purchase">抢购</div>\
+									</div>\
 								</div>\
-							</div>\
-						</a>\
-					</li>'
-	    	$(hehe).appendTo('.like-wrape ul');
-	    		oo++;
-	    	if(oo > 10){
-	            me.noData();
-		    	me.lock();
-	    		
+							</a>\
+						</li>'
+		    	$(hehe).appendTo('.like-wrape ul');
+		    		oo++;
+		    	if(oo > 10){
+		            me.noData();
+			    	me.lock();
+		    		
+		    	}
+		    	me.resetload();
+		    }
+		});
+		// 轮播 
+		var swiper = new Swiper('.m-slide .swiper-container', {
+	        loop: true,
+			autoplay:5000,
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			grabCursor : true,
+			paginationClickable: false,
+	    });
+	    // 拖动
+	    var swiper = new Swiper('.panic-buying', {
+	        slidesPerView: 'auto',
+	        paginationClickable: true,
+	        spaceBetween: 0,
+	        freeMode: true
+	    });
+	    // 倒计时
+	    function countdown(){
+	    	var mDate = new Date('2016/11/30 00:00:00');
+	    	var newDate = new Date();
+	    	var t = mDate - newDate;
+	    	var d = 0;
+	    	var h = 0;
+	    	var m = 0;
+	    	var s = 0;
+	    	if (t > 0) {
+	    		d = Math.floor(t/1000/60/60/24);
+	    		h = Math.floor(t/1000/60/60%24);
+	    		m = Math.floor(t/1000/60%60);
+	    		s = Math.floor(t/1000%60);
 	    	}
-	    	me.resetload();
+	    	document.querySelector('.date-h').innerText = d < 10 ? '0' + d : d;
+	    	document.querySelector('.date-m').innerText = m < 10 ? '0' + m : m;
+	    	document.querySelector('.date-s').innerText = s < 10 ? '0' + s : s;
 	    }
-	});
-	// 轮播 
-	var swiper = new Swiper('.m-slide .swiper-container', {
-        loop: true,
-		autoplay:5000,
-		pagination: '.swiper-pagination',
-		paginationClickable: true,
-		grabCursor : true,
-		paginationClickable: false,
-    });
-    // 拖动
-    var swiper = new Swiper('.panic-buying', {
-        slidesPerView: 'auto',
-        paginationClickable: true,
-        spaceBetween: 0,
-        freeMode: true
-    });
-    // 倒计时
-    function countdown(){
-    	var mDate = new Date('2016/11/30 00:00:00');
-    	var newDate = new Date();
-    	var t = mDate - newDate;
-    	var d = 0;
-    	var h = 0;
-    	var m = 0;
-    	var s = 0;
-    	if (t > 0) {
-    		d = Math.floor(t/1000/60/60/24);
-    		h = Math.floor(t/1000/60/60%24);
-    		m = Math.floor(t/1000/60%60);
-    		s = Math.floor(t/1000%60);
-    	}
-    	document.querySelector('.date-h').innerText = d < 10 ? '0' + d : d;
-    	document.querySelector('.date-m').innerText = m < 10 ? '0' + m : m;
-    	document.querySelector('.date-s').innerText = s < 10 ? '0' + s : s;
-    }
-    countdown();
-    setInterval(countdown, 1000);
-})();
-	
-    
+	    countdown();
+	    setInterval(countdown, 1000);
+	})();
 </script>
+</body>
 </html>

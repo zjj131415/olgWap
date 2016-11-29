@@ -938,14 +938,7 @@ img {
   display: box;
 }
 
-.ui-dialog-hd {
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  position: relative;
-}
-
-.ui-dialog-cnt {
+.ui-dialog .ui-dialog-cnt {
   -webkit-border-radius: 6px;
           border-radius: 6px;
   width: 270px;
@@ -956,7 +949,7 @@ img {
   font-size: 16px;
 }
 
-.ui-dialog-bd {
+.ui-dialog .ui-dialog-bd {
   min-height: 71px;
   -webkit-border-top-left-radius: 6px;
           border-top-left-radius: 6px;
@@ -970,17 +963,17 @@ img {
   -webkit-box-orient: vertical;
 }
 
-.ui-dialog-bd > h4 {
+.ui-dialog .ui-dialog-bd > h4 {
   margin-bottom: 4px;
   width: 100%;
   text-align: center;
 }
 
-.ui-dialog-bd > div, .ui-dialog-bd > ul {
+.ui-dialog .ui-dialog-bd > div {
   width: 100%;
 }
 
-.ui-dialog-ft {
+.ui-dialog .ui-dialog-ft {
   -webkit-border-bottom-left-radius: 6px;
           border-bottom-left-radius: 6px;
   -webkit-border-bottom-right-radius: 6px;
@@ -993,31 +986,10 @@ img {
   border-top: 1px solid #e0e0e0;
   height: 42px;
   line-height: 42px;
+  overflow: hidden;
 }
 
-.ui-dialog-close:before {
-  font-family: "iconfont" !important;
-  font-size: 32px;
-  line-height: 44px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  display: block;
-  color: rgba(0, 0, 0, 0.5);
-  content: "";
-  color: #828282;
-  display: block;
-  line-height: 32px;
-  position: absolute;
-  top: 3px;
-  right: 3px;
-}
-
-.ui-dialog-close:active {
-  opacity: 0.5;
-}
-
-.ui-dialog-ft button {
+.ui-dialog .ui-dialog-ft button {
   color: #00a5e0;
   text-align: center;
   border-right: 1px #e0e0e0 solid;
@@ -1029,71 +1001,28 @@ img {
   -webkit-box-flex: 1;
 }
 
-.ui-dialog-ft button:active {
+.ui-dialog .ui-dialog-ft button:active {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-.ui-dialog-ft button:first-child {
+.ui-dialog .ui-dialog-ft button:first-child {
   -webkit-border-bottom-left-radius: 6px;
           border-bottom-left-radius: 6px;
 }
 
-.ui-dialog-ft button:last-child {
+.ui-dialog .ui-dialog-ft button:last-child {
   border-right: 0;
   -webkit-border-bottom-right-radius: 6px;
           border-bottom-right-radius: 6px;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ui-dialog-ft {
-    position: relative;
-    border: 0;
-    background-position: left top;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
-    background-repeat: repeat-x;
-    -webkit-background-size: 100% 1px;
+@-webkit-keyframes am-rotate2 {
+  from {
+    background-position: 0 0;
   }
-  .ui-dialog-ft button {
-    border-right: 0;
-    background-position: right top;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
-    background-repeat: repeat-y;
-    -webkit-background-size: 1px 100%;
+  to {
+    background-position: -444px 0;
   }
-  .ui-dialog-ft button:last-child {
-    background: none;
-  }
-}
-
-加载
-.ui-loading-wrap {
-  display: -webkit-box;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-  text-align: center;
-  height: 40px;
-}
-
-.ui-loading {
-  width: 20px;
-  height: 20px;
-  display: block;
-  background: url(../images/loading_sprite.png);
-  -webkit-background-size: auto 20px;
-  -webkit-animation: am-rotate 1s steps(12) infinite;
-}
-
-.ui-loading-bright {
-  width: 37px;
-  height: 37px;
-  display: block;
-  background-image: url(../images/loading_sprite_white.png);
-  -webkit-background-size: auto 37px;
-  -webkit-animation: am-rotate2 1s steps(12) infinite;
-}
-
-.ui-loading-wrap .ui-loading {
-  margin: 10px;
 }
 
 .ui-loading-block {
@@ -1110,6 +1039,11 @@ img {
   background: rgba(0, 0, 0, 0.4);
   display: none;
   background: transparent;
+}
+
+.ui-loading-block.show {
+  display: -webkit-box;
+  display: box;
 }
 
 .ui-loading-block .ui-loading-cnt {
@@ -1127,46 +1061,20 @@ img {
 }
 
 .ui-loading-block .ui-loading-bright {
+  width: 37px;
+  height: 37px;
   margin: 18px 0 8px;
+  display: block;
+  background-image: url(../images/loading_sprite_white.png);
+  -webkit-background-size: auto 37px;
+  -webkit-animation: am-rotate2 1s steps(12) infinite;
 }
 
-.ui-loading-block.show {
-  display: -webkit-box;
-  display: box;
-}
-
-@-webkit-keyframes am-rotate {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -240px 0;
-  }
-}
-
-@-webkit-keyframes am-rotate2 {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -444px 0;
-  }
-}
-
-.ui-loading-block {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 9999;
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-  background: rgba(0, 0, 0, 0.4);
-  display: none;
-  background: transparent;
+.ui-loading-block .ui-loading-msg {
+  height: 25px;
+  color: #fff;
+  line-height: 25px;
+  font-size: 13px;
 }
 
 .ui-poptips {
@@ -1176,10 +1084,6 @@ img {
   left: 0;
   z-index: 99;
   text-align: center;
-}
-
-.ui-poptips.ui-poptips-success > i {
-  content: "";
 }
 
 .ui-poptips .ui-poptips-cnt {

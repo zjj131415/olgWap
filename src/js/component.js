@@ -180,7 +180,7 @@
     content:'',
     button:['确认'],
     select:0,
-    allowScroll:false,
+    allowScroll:true,
     callback:function(){}
   }
   // 构造函数
@@ -247,7 +247,7 @@
   var _loadingTpl='<div class="ui-loading-block show">'+
         '<div class="ui-loading-cnt">'+
           '<i class="ui-loading-bright"></i>'+
-          '<p><%=content%></p>'+
+          '<p class="ui-loading-msg"><%=content%></p>'+
        '</div>'+
      '</div>';
   

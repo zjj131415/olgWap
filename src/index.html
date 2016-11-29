@@ -346,12 +346,27 @@
 			</a>
 		</nav>
 	</footer>
-	<div class="ui-loading-block show">
+	<!-- <div class="ui-loading-block show">
         <div class="ui-loading-cnt">
           <i class="ui-loading-bright"></i>
-          <p><%=content%></p>
+          <p class="ui-loading-msg">加载中...</p>
        </div>
-     </div>
+     </div> -->
+     <!-- <div class="ui-dialog show">
+        <div class="ui-dialog-cnt">
+            <div class="ui-dialog-bd">
+                <div>
+	                <h4>title</h4>
+	                <div>内容</div>
+                </div>
+            </div>
+            <div class="ui-dialog-ft ui-btn-group">
+             
+		        <button type="button" data-role="button"  class="select" id="dialogButton0">确认</button> 
+		       
+		        <button type="button" data-role="button" id="dialogButton1">取消</div> 
+            </div>
+        </div> -->
 <script src="js/zepto.min.js"></script>
 <script src="js/component.js"></script>
 <script src="js/swiper.min.js"></script>
@@ -369,20 +384,21 @@
 		// 		alert('')
 		// 	})
 		// })
-
+		var xixi = $.loading();
+		setTimeout(function(){
+			xixi.loading('hide')
+		}, 3000)
+		var hehe = $.dialog({
+			title: '你吃药了吗?',
+			content: '吃了',
+			button: ['确认', '取消']
+		})
 		var el;
 		
 		    el=$.tips({
 		        content:'密码格式需由6~18位字母与数字组成!',
-		        stayTime:1000
+		        stayTime: 2000
 		    })
-		    el.on("tips:hide",function(){
-		        console.log("tips hide");
-		    })
-
-
-
-
 		var oo = 1;
 		$('.scwrapper').dropload({
 		    scrollArea : window,

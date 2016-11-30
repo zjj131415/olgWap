@@ -1507,3 +1507,96 @@
   font-size: 13px;
   color: #999;
 }
+
+.write-evaluate-container .textarea {
+  padding: 0 12px;
+  background: #fff;
+}
+
+.write-evaluate-container .textarea textarea {
+  padding: 4px 0;
+  width: 100%;
+  height: 100px;
+  resize: none;
+  border: none;
+  font-size: 15px;
+  color: #666;
+  line-height: 18px;
+}
+
+.write-evaluate-container .img-list {
+  border-bottom: 1px solid #ececec;
+}
+
+.write-evaluate-container .evaluate-star {
+  padding: 15px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.write-evaluate-container .evaluate-star > p {
+  font-size: 15px;
+  color: #666;
+}
+
+.write-evaluate-container .evaluate-star .star-group {
+  margin-top: 10px;
+}
+
+.write-evaluate-container .evaluate-star .iconfont {
+  margin-right: 20px;
+  font-size: 30px;
+  color: #cccccc;
+}
+
+.write-evaluate-container .evaluate-star .iconfont:last-child {
+  margin-right: 0;
+}
+
+.write-evaluate-container .evaluate-star .iconfont.active {
+  color: #e73736;
+}
+
+.write-evaluate-container .evaluate-action {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+}
+
+.write-evaluate-container .evaluate-action .evaluate-checkbox {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-top: 1px solid #ececec;
+}
+
+.write-evaluate-container .evaluate-action .evaluate-checkbox > label {
+  display: block;
+  height: 18px;
+  margin-left: 12px;
+  margin-top: 16px;
+  line-height: 18px;
+  color: #000;
+  font-size: 15px;
+}
+
+.write-evaluate-container .evaluate-action .checkboxFour {
+  display: inline-block;
+}
+
+.write-evaluate-container .evaluate-action .submit-btn {
+  width: 120px;
+  background: #4f4697;
+  line-height: 50px;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}

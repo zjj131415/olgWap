@@ -145,7 +145,7 @@
   text-overflow: ellipsis;
   line-height: 17px;
   color: #333;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .cart-product-cell .cart-product-prop {
@@ -252,10 +252,10 @@
 }
 
 .m-recommend .recommend-wrape .describe {
-  height: 10px;
-  line-height: 10px;
+  height: 12px;
+  line-height: 12px;
   text-align: center;
-  font-size: 8px;
+  font-size: 11px;
   color: #999;
 }
 
@@ -297,7 +297,7 @@
   text-overflow: ellipsis;
   line-height: 15px;
   color: #333;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .m-recommend .shopping-terms .similar-product-price {

@@ -27,7 +27,7 @@
 				<i class="iconfont icon-search"></i>
 				在千万海外商品中搜索
 			</a>
-			<a class="left-box iconfont icon-xinxi" href="user-confirm-order.html">
+			<a class="left-box iconfont icon-xinxi" href="product-write-evaluate.html">
 				<div class="state"></div>
 			</a>
 		</div>
@@ -307,7 +307,7 @@
 								</div>
 								<div class="like-info">
 									<div class="title">牛栏4段婴儿原装保税区荷兰进口奶粉四段诺 优能4海外直邮Nutrilon就减肥减肥减肥减肥鬼地方个地方郭德纲的风格的风格大方</div>
-									<div class="address"><img src="images/helan.png" width="18px" height="18px" alt="">荷兰品牌</div>
+									<!-- <div class="address"><img src="images/helan.png" width="18px" height="18px" alt="">荷兰品牌</div> -->
 									<div class="price">
 										<span class="original-price">¥222.00</span>
 										<span class="favorable-price">¥119.00</span>
@@ -368,7 +368,6 @@
             </div>
         </div> -->
 <script src="js/zepto.min.js"></script>
-<script src="js/component.js"></script>
 <script src="js/swiper.min.js"></script>
 <script type="text/javascript">
 	(function(){
@@ -384,21 +383,24 @@
 		// 		alert('')
 		// 	})
 		// })
-		var xixi = $.loading();
-		setTimeout(function(){
-			xixi.loading('hide')
-		}, 3000)
-		var hehe = $.dialog({
-			title: '你吃药了吗?',
-			content: '吃了',
-			button: ['确认', '取消']
-		})
-		var el;
+		// var xixi = $.loading();
+		// setTimeout(function(){
+		// 	xixi.loading('hide')
+		// }, 3000)
+		// var hehe = $.dialog({
+		// 	title: '你吃药了吗?',
+		// 	content: '吃了',
+		// 	button: ['确认', '取消']
+		// })
+		// $(hehe).on('dialog:action', function(e){
+		// 	alert(e.index)
+		// })
+		// var el;
 		
-		    el=$.tips({
-		        content:'密码格式需由6~18位字母与数字组成!',
-		        stayTime: 2000
-		    })
+		//     el=$.tips({
+		//         content:'密码格式需由6~18位字母与数字组成!',
+		//         stayTime: 2000
+		//     })
 		var oo = 1;
 		$('.scwrapper').dropload({
 		    scrollArea : window,

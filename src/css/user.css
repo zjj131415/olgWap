@@ -6,7 +6,10 @@
   position: relative;
   padding: 0 12px;
   padding-top: 45px;
-  background: url(../images/user-infor.png) no-repeat center #434c94;
+  background-color: #434c94;
+  background-image: url(../images/user-infor.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .user-center-infor .messge {
@@ -78,10 +81,11 @@
   height: 18px;
   margin-top: 15px;
   color: #fff;
+  font-size: 12px;
 }
 
 .user-center-infor .management .iconfont {
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
 }
 
@@ -131,7 +135,7 @@
   line-height: 20px;
   text-align: center;
   color: #666;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .min-nav-order .nav-list .number {
@@ -209,7 +213,7 @@
   line-height: 25px;
   text-align: center;
   color: #666;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .footer-banner {
@@ -346,7 +350,7 @@
 }
 
 .u-operating .tal {
-  font-size: 10px;
+  font-size: 11px;
   color: #666;
   line-height: 16px;
 }
@@ -995,4 +999,108 @@
           border-radius: 5px;
   font-size: 15px;
   color: #fff;
+}
+
+.payment-success-container .head {
+  height: 80px;
+  position: relative;
+  background-image: url(../images/payment-success-bg.png);
+  background-repeat: no-repeat;
+  background-size: 640px 80px;
+  background-position: center;
+}
+
+.payment-success-container .head .success-msg {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  line-height: 20px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.payment-success-container .head .success-msg > .icon-gouxuan {
+  display: inline-block;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #fff;
+  font-size: 10px;
+  text-align: center;
+  line-height: 24px;
+  color: #494d94;
+}
+
+.payment-success-container .payment-infor {
+  padding: 10px 12px;
+  background: #fff;
+  border-bottom: 1px dashed #ececec;
+}
+
+.payment-success-container .payment-infor .infor-li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 18px;
+  font-size: 13px;
+}
+
+.payment-success-container .payment-infor .infor-key {
+  color: #666;
+}
+
+.payment-success-container .payment-infor .infor-value {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #000;
+}
+
+.payment-success-container .actual-price {
+  padding: 10px 12px;
+  background: #fff;
+  text-align: center;
+}
+
+.payment-success-container .actual-price .price {
+  line-height: 20px;
+  font-size: 13px;
+  color: #000;
+  text-align: left;
+}
+
+.payment-success-container .actual-price .price > span {
+  color: #ff494b;
+  font-size: 19px;
+}
+
+.payment-success-container .actual-price .btns-group {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.payment-success-container .actual-price .btns-group > a {
+  display: inline-block;
+  width: 135px;
+  height: 35px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid #4f4697;
+  font-size: 14px;
+  color: #4f4697;
+  line-height: 35px;
+  text-align: center;
+}
+
+.payment-success-container .actual-price .btns-group > a:last-child {
+  margin-left: 30px;
 }

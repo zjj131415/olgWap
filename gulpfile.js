@@ -4,6 +4,8 @@
 // load plugins
 	var gulp = require('gulp'),
 		sass = require('gulp-sass'),
+		jshint = require('gulp-jshint'),
+   		uglify = require('gulp-uglify'),
 		notify = require('gulp-notify'),
 		rename = require('gulp-rename'),
 		minifycss = require('gulp-minify-css'),
@@ -27,7 +29,20 @@
 	    //提醒任务完成
 	    .pipe(notify({ message: 'sass task complete' }));
 	})
-// watch task
+	gulp.task('minjs', function(){
+		return gulp.src('src/js/*.js')
+		// js语法检测
+		.pipe(jshint())
+		// // 添加min后缀
+		.pipe(rename({ suffix: '.min' }))
+		// // 压缩js文件
+		.pipe(uglify())
+		// // 输出文件
+		.pipe(gulp.dest('dist/js'))
+		// //提醒任务完成
+	    .pipe(notify({ message: 'js task complete' }));
+	})
+	// watch task
 	gulp.task('watch', function(){
 		// Watch .scss files
 	  gulp.watch('src/sass/*.scss', ['sass']);

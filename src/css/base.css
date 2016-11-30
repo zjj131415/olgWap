@@ -205,7 +205,6 @@ img {
 @font-face {
   font-family: "iconfont";
   src: url("../iconfont/iconfont.eot?t=1476408252");
-  /* IE9*/
   src: url("../iconfont/iconfont.eot?t=1476408252#iefix") format("embedded-opentype"), url("../iconfont/iconfont.woff?t=1476408252") format("woff"), url("../iconfont/iconfont.ttf?t=1476408252") format("truetype"), url("../iconfont/iconfont.svg?t=1476408252#iconfont") format("svg");
 }
 
@@ -478,6 +477,10 @@ img {
   content: "\e606";
 }
 
+.icon-pinleiquexiang01:before {
+  content: "\e68d";
+}
+
 .icon-daifahuo:before {
   content: "\e61b";
 }
@@ -508,6 +511,10 @@ img {
 
 .icon-kefu:before {
   content: "\e622";
+}
+
+.icon-gouxuan:before {
+  content: "\e63e";
 }
 
 .icon-huiyuanid:before {
@@ -1092,7 +1099,7 @@ img {
   -webkit-border-radius: 5px;
           border-radius: 5px;
   background: #4f4697;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
   line-height: 30px;
   height: 30px;
   color: #fff;

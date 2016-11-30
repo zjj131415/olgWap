@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="www.olgolg.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta name="description" content="欧乐购海外直邮">
+    <meta name="Keywords" content="网上购物">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="u-header">
+        <header class="header">
+            <div class="header-left">
+                <i class="iconfont icon-left"></i>
+            </div>
+            <div class="header-title">评价</div>
+        </header>
+    </div>
+    <div class="scwrapper">
+        <div class="write-evaluate-container">
+            <div class="textarea">
+                <textarea placeholder="写下购物体会和使用感受来帮助其他小伙伴吧~"></textarea>
+            </div>
+            <ul class="img-list">
+                <li class="">
+                    <img src="" alt="">
+                </li>
+            </ul>
+            <div class="evaluate-star">
+                <p>赏个五星好评吧~</p>
+                <div class="star-group">
+                    <i class="iconfont icon-shoucang active"></i>
+                    <i class="iconfont icon-shoucang"></i>
+                    <i class="iconfont icon-shoucang"></i>
+                    <i class="iconfont icon-shoucang"></i>
+                    <i class="iconfont icon-shoucang"></i>
+                </div>
+            </div>
+            <div class="evaluate-action">
+                <div class="evaluate-checkbox">
+                    <label>
+                        <div class="checkboxFour">
+                             <input type="checkbox" checked="checked" value="755" id="checkboxFourInput" class="checkboxFourInput">
+                            <label for="checkboxFourInput"></label>
+                        </div>
+                        匿名评价
+                    </label>
+                </div>
+                <div class="submit-btn">发表评价</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/zepto.min.js"></script>
+    <script>
+        (function($){
+            $('.star-group .icon-shoucang').on('tap', function(e){
+                var starList = $('.star-group .icon-shoucang').removeClass('active');
+                _inde = $(this).index();//评价的等级
+                for (var i = 0; i <= _inde; i++) {
+                    starList.eq(i).addClass('active');
+                }
+            })
+        })(Zepto || {})
+    </script>
+</body>
+</html>
